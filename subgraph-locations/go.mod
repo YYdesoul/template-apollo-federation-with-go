@@ -1,4 +1,4 @@
-module product
+module github.com/YYdesoul/template-apollo-federation-with-go/subgraph-locations
 
 go 1.24.4
 
