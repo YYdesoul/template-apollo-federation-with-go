@@ -18,7 +18,10 @@ func (r *queryResolver) Locations(ctx context.Context) ([]*model.Location, error
 
 // Location is the resolver for the location field.
 func (r *queryResolver) Location(ctx context.Context, id string) (*model.Location, error) {
-	panic(fmt.Errorf("not implemented: Location - location"))
+	return &model.Location{
+		ID: id,
+		Name: "sample name",
+	}, nil
 }
 
 // Query returns QueryResolver implementation.
