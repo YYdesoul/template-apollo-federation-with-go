@@ -21,6 +21,8 @@ func (r *queryResolver) Location(ctx context.Context, id string) (*model.Locatio
 	return &model.Location{
 		ID: id,
 		Name: "sample name",
+		Description: "sample description",
+		Photo: "sample Photo",
 	}, nil
 }
 
